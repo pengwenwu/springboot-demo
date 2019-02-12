@@ -43,6 +43,12 @@
             <optional>true</optional>
         </dependency>
 
+        <!--&lt;!&ndash; jdbc &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-jdbc</artifactId>-->
+        <!--</dependency>-->
+
         <!--&lt;!&ndash; mysql连接类 &ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>mysql</groupId>-->
@@ -68,6 +74,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
