@@ -2,16 +2,13 @@ package com.example.demo.domain.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
 public class User {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(nullable = false)
@@ -19,4 +16,14 @@ public class User {
 
     @Column(nullable = false)
     private Integer age;
+
+    public User() {
+        super();
+    }
+
+    public User(String name, Integer age) {
+        super();
+        this.name = name;
+        this.age = age;
+    }
 }
